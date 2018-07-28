@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CA356DE1E61C0C508779FEB /* libPods-TyphoonExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3663A2042DC22371337F7454 /* libPods-TyphoonExample.a */; };
+		D96A26FB210C64E500D36B70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A26FA210C64E500D36B70 /* AppDelegate.swift */; };
+		D96A26FD210C64E500D36B70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A26FC210C64E500D36B70 /* ViewController.swift */; };
+		D96A2702210C64E600D36B70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96A2701210C64E600D36B70 /* Assets.xcassets */; };
+		D96A2705210C64E600D36B70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96A2703210C64E600D36B70 /* LaunchScreen.storyboard */; };
+		D96A2710210C64E600D36B70 /* TyphoonExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A270F210C64E600D36B70 /* TyphoonExampleTests.swift */; };
+		D96A271B210C64E600D36B70 /* TyphoonExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A271A210C64E600D36B70 /* TyphoonExampleUITests.swift */; };
+		D96A272B210C659100D36B70 /* CartManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A272A210C659100D36B70 /* CartManagerProtocol.swift */; };
+		D96A272D210C65A000D36B70 /* CartManagerSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A272C210C65A000D36B70 /* CartManagerSingleton.swift */; };
+		D96A272F210C65CA00D36B70 /* CartManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A272E210C65CA00D36B70 /* CartManagerMock.swift */; };
+		D9839843210C94E00015FCC6 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9839842210C94E00015FCC6 /* Cart.swift */; };
+		D983985B210C95A10015FCC6 /* CartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9839855210C95A10015FCC6 /* CartInteractor.swift */; };
+		D983985C210C95A10015FCC6 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9839856210C95A10015FCC6 /* CartViewController.swift */; };
+		D983985D210C95A10015FCC6 /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9839857210C95A10015FCC6 /* CartPresenter.swift */; };
+		D983985E210C95A10015FCC6 /* CartWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9839858210C95A10015FCC6 /* CartWorker.swift */; };
+		D983985F210C95A10015FCC6 /* CartModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9839859210C95A10015FCC6 /* CartModels.swift */; };
+		D9839860210C95A10015FCC6 /* CartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983985A210C95A10015FCC6 /* CartRouter.swift */; };
+		D9839863210C95AC0015FCC6 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9839861210C95AC0015FCC6 /* Cart.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D96A270C210C64E600D36B70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D96A26EF210C64E500D36B70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D96A26F6210C64E500D36B70;
+			remoteInfo = TyphoonExample;
+		};
+		D96A2717210C64E600D36B70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D96A26EF210C64E500D36B70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D96A26F6210C64E500D36B70;
+			remoteInfo = TyphoonExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3663A2042DC22371337F7454 /* libPods-TyphoonExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TyphoonExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D9D17760A65316DB0BD8BE /* Pods-TyphoonExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TyphoonExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TyphoonExample/Pods-TyphoonExample.release.xcconfig"; sourceTree = "<group>"; };
+		A5ED320CE4A7335F139C3749 /* Pods-TyphoonExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TyphoonExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TyphoonExample/Pods-TyphoonExample.debug.xcconfig"; sourceTree = "<group>"; };
+		D96A26F7210C64E500D36B70 /* TyphoonExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TyphoonExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96A26FA210C64E500D36B70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D96A26FC210C64E500D36B70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D96A2701210C64E600D36B70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D96A2704210C64E600D36B70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D96A2706210C64E600D36B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D96A270B210C64E600D36B70 /* TyphoonExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TyphoonExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96A270F210C64E600D36B70 /* TyphoonExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TyphoonExampleTests.swift; sourceTree = "<group>"; };
+		D96A2711210C64E600D36B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D96A2716210C64E600D36B70 /* TyphoonExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TyphoonExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96A271A210C64E600D36B70 /* TyphoonExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TyphoonExampleUITests.swift; sourceTree = "<group>"; };
+		D96A271C210C64E600D36B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D96A272A210C659100D36B70 /* CartManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManagerProtocol.swift; sourceTree = "<group>"; };
+		D96A272C210C65A000D36B70 /* CartManagerSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManagerSingleton.swift; sourceTree = "<group>"; };
+		D96A272E210C65CA00D36B70 /* CartManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManagerMock.swift; sourceTree = "<group>"; };
+		D9839842210C94E00015FCC6 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		D9839855210C95A10015FCC6 /* CartInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CartInteractor.swift; path = TyphoonExample/Scenes/Cart/CartInteractor.swift; sourceTree = SOURCE_ROOT; };
+		D9839856210C95A10015FCC6 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CartViewController.swift; path = TyphoonExample/Scenes/Cart/CartViewController.swift; sourceTree = SOURCE_ROOT; };
+		D9839857210C95A10015FCC6 /* CartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CartPresenter.swift; path = TyphoonExample/Scenes/Cart/CartPresenter.swift; sourceTree = SOURCE_ROOT; };
+		D9839858210C95A10015FCC6 /* CartWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CartWorker.swift; path = TyphoonExample/Scenes/Cart/CartWorker.swift; sourceTree = SOURCE_ROOT; };
+		D9839859210C95A10015FCC6 /* CartModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CartModels.swift; path = TyphoonExample/Scenes/Cart/CartModels.swift; sourceTree = SOURCE_ROOT; };
+		D983985A210C95A10015FCC6 /* CartRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CartRouter.swift; path = TyphoonExample/Scenes/Cart/CartRouter.swift; sourceTree = SOURCE_ROOT; };
+		D9839862210C95AC0015FCC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TyphoonExample/Scenes/Cart/Base.lproj/Cart.storyboard; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D96A26F4210C64E500D36B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CA356DE1E61C0C508779FEB /* libPods-TyphoonExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D96A2708210C64E600D36B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D96A2713210C64E600D36B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D55100CCE0760D58AB3FB9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3663A2042DC22371337F7454 /* libPods-TyphoonExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D92A75C0210C882F005AB80E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D9839844210C957C0015FCC6 /* Cart */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D96A26EE210C64E500D36B70 = {
+			isa = PBXGroup;
+			children = (
+				D96A26F9210C64E500D36B70 /* TyphoonExample */,
+				D96A270E210C64E600D36B70 /* TyphoonExampleTests */,
+				D96A2719210C64E600D36B70 /* TyphoonExampleUITests */,
+				D96A26F8210C64E500D36B70 /* Products */,
+				FEC85F0D8C3E1002038FDD46 /* Pods */,
+				8D55100CCE0760D58AB3FB9C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D96A26F8210C64E500D36B70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D96A26F7210C64E500D36B70 /* TyphoonExample.app */,
+				D96A270B210C64E600D36B70 /* TyphoonExampleTests.xctest */,
+				D96A2716210C64E600D36B70 /* TyphoonExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D96A26F9210C64E500D36B70 /* TyphoonExample */ = {
+			isa = PBXGroup;
+			children = (
+				D96A26FA210C64E500D36B70 /* AppDelegate.swift */,
+				D9839864210C960F0015FCC6 /* Model */,
+				D92A75C0210C882F005AB80E /* Scenes */,
+				D9DF77C8210C8FF5004442B6 /* CartManager */,
+				D96A26FC210C64E500D36B70 /* ViewController.swift */,
+				D96A2701210C64E600D36B70 /* Assets.xcassets */,
+				D96A2703210C64E600D36B70 /* LaunchScreen.storyboard */,
+				D96A2706210C64E600D36B70 /* Info.plist */,
+			);
+			path = TyphoonExample;
+			sourceTree = "<group>";
+		};
+		D96A270E210C64E600D36B70 /* TyphoonExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D96A270F210C64E600D36B70 /* TyphoonExampleTests.swift */,
+				D96A2711210C64E600D36B70 /* Info.plist */,
+			);
+			path = TyphoonExampleTests;
+			sourceTree = "<group>";
+		};
+		D96A2719210C64E600D36B70 /* TyphoonExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D96A271A210C64E600D36B70 /* TyphoonExampleUITests.swift */,
+				D96A271C210C64E600D36B70 /* Info.plist */,
+			);
+			path = TyphoonExampleUITests;
+			sourceTree = "<group>";
+		};
+		D9839844210C957C0015FCC6 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				D9839861210C95AC0015FCC6 /* Cart.storyboard */,
+				D9839855210C95A10015FCC6 /* CartInteractor.swift */,
+				D9839859210C95A10015FCC6 /* CartModels.swift */,
+				D9839857210C95A10015FCC6 /* CartPresenter.swift */,
+				D983985A210C95A10015FCC6 /* CartRouter.swift */,
+				D9839856210C95A10015FCC6 /* CartViewController.swift */,
+				D9839858210C95A10015FCC6 /* CartWorker.swift */,
+			);
+			name = Cart;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		D9839864210C960F0015FCC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D9839842210C94E00015FCC6 /* Cart.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9DF77C8210C8FF5004442B6 /* CartManager */ = {
+			isa = PBXGroup;
+			children = (
+				D96A272A210C659100D36B70 /* CartManagerProtocol.swift */,
+				D96A272C210C65A000D36B70 /* CartManagerSingleton.swift */,
+				D96A272E210C65CA00D36B70 /* CartManagerMock.swift */,
+			);
+			path = CartManager;
+			sourceTree = "<group>";
+		};
+		FEC85F0D8C3E1002038FDD46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5ED320CE4A7335F139C3749 /* Pods-TyphoonExample.debug.xcconfig */,
+				44D9D17760A65316DB0BD8BE /* Pods-TyphoonExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D96A26F6210C64E500D36B70 /* TyphoonExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D96A271F210C64E600D36B70 /* Build configuration list for PBXNativeTarget "TyphoonExample" */;
+			buildPhases = (
+				54E6D7B2AF8A2E526E99DBE0 /* [CP] Check Pods Manifest.lock */,
+				D96A26F3210C64E500D36B70 /* Sources */,
+				D96A26F4210C64E500D36B70 /* Frameworks */,
+				D96A26F5210C64E500D36B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TyphoonExample;
+			productName = TyphoonExample;
+			productReference = D96A26F7210C64E500D36B70 /* TyphoonExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D96A270A210C64E600D36B70 /* TyphoonExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D96A2722210C64E600D36B70 /* Build configuration list for PBXNativeTarget "TyphoonExampleTests" */;
+			buildPhases = (
+				D96A2707210C64E600D36B70 /* Sources */,
+				D96A2708210C64E600D36B70 /* Frameworks */,
+				D96A2709210C64E600D36B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D96A270D210C64E600D36B70 /* PBXTargetDependency */,
+			);
+			name = TyphoonExampleTests;
+			productName = TyphoonExampleTests;
+			productReference = D96A270B210C64E600D36B70 /* TyphoonExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D96A2715210C64E600D36B70 /* TyphoonExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D96A2725210C64E600D36B70 /* Build configuration list for PBXNativeTarget "TyphoonExampleUITests" */;
+			buildPhases = (
+				D96A2712210C64E600D36B70 /* Sources */,
+				D96A2713210C64E600D36B70 /* Frameworks */,
+				D96A2714210C64E600D36B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D96A2718210C64E600D36B70 /* PBXTargetDependency */,
+			);
+			name = TyphoonExampleUITests;
+			productName = TyphoonExampleUITests;
+			productReference = D96A2716210C64E600D36B70 /* TyphoonExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D96A26EF210C64E500D36B70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Valerio Ferrucci";
+				TargetAttributes = {
+					D96A26F6210C64E500D36B70 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					D96A270A210C64E600D36B70 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = D96A26F6210C64E500D36B70;
+					};
+					D96A2715210C64E600D36B70 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = D96A26F6210C64E500D36B70;
+					};
+				};
+			};
+			buildConfigurationList = D96A26F2210C64E500D36B70 /* Build configuration list for PBXProject "TyphoonExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D96A26EE210C64E500D36B70;
+			productRefGroup = D96A26F8210C64E500D36B70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D96A26F6210C64E500D36B70 /* TyphoonExample */,
+				D96A270A210C64E600D36B70 /* TyphoonExampleTests */,
+				D96A2715210C64E600D36B70 /* TyphoonExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D96A26F5210C64E500D36B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9839863210C95AC0015FCC6 /* Cart.storyboard in Resources */,
+				D96A2705210C64E600D36B70 /* LaunchScreen.storyboard in Resources */,
+				D96A2702210C64E600D36B70 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D96A2709210C64E600D36B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D96A2714210C64E600D36B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54E6D7B2AF8A2E526E99DBE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TyphoonExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D96A26F3210C64E500D36B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9839843210C94E00015FCC6 /* Cart.swift in Sources */,
+				D9839860210C95A10015FCC6 /* CartRouter.swift in Sources */,
+				D983985C210C95A10015FCC6 /* CartViewController.swift in Sources */,
+				D96A26FD210C64E500D36B70 /* ViewController.swift in Sources */,
+				D983985F210C95A10015FCC6 /* CartModels.swift in Sources */,
+				D96A272D210C65A000D36B70 /* CartManagerSingleton.swift in Sources */,
+				D96A26FB210C64E500D36B70 /* AppDelegate.swift in Sources */,
+				D983985D210C95A10015FCC6 /* CartPresenter.swift in Sources */,
+				D983985B210C95A10015FCC6 /* CartInteractor.swift in Sources */,
+				D96A272F210C65CA00D36B70 /* CartManagerMock.swift in Sources */,
+				D96A272B210C659100D36B70 /* CartManagerProtocol.swift in Sources */,
+				D983985E210C95A10015FCC6 /* CartWorker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D96A2707210C64E600D36B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96A2710210C64E600D36B70 /* TyphoonExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D96A2712210C64E600D36B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96A271B210C64E600D36B70 /* TyphoonExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D96A270D210C64E600D36B70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D96A26F6210C64E500D36B70 /* TyphoonExample */;
+			targetProxy = D96A270C210C64E600D36B70 /* PBXContainerItemProxy */;
+		};
+		D96A2718210C64E600D36B70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D96A26F6210C64E500D36B70 /* TyphoonExample */;
+			targetProxy = D96A2717210C64E600D36B70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D96A2703210C64E600D36B70 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D96A2704210C64E600D36B70 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D9839861210C95AC0015FCC6 /* Cart.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9839862210C95AC0015FCC6 /* Base */,
+			);
+			name = Cart.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D96A271D210C64E600D36B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D96A271E210C64E600D36B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D96A2720210C64E600D36B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5ED320CE4A7335F139C3749 /* Pods-TyphoonExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 485UWJKTW6;
+				INFOPLIST_FILE = TyphoonExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.valerio.TyphoonExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D96A2721210C64E600D36B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44D9D17760A65316DB0BD8BE /* Pods-TyphoonExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 485UWJKTW6;
+				INFOPLIST_FILE = TyphoonExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.valerio.TyphoonExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D96A2723210C64E600D36B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 485UWJKTW6;
+				INFOPLIST_FILE = TyphoonExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.valerio.TyphoonExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TyphoonExample.app/TyphoonExample";
+			};
+			name = Debug;
+		};
+		D96A2724210C64E600D36B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 485UWJKTW6;
+				INFOPLIST_FILE = TyphoonExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.valerio.TyphoonExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TyphoonExample.app/TyphoonExample";
+			};
+			name = Release;
+		};
+		D96A2726210C64E600D36B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 485UWJKTW6;
+				INFOPLIST_FILE = TyphoonExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.valerio.TyphoonExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TyphoonExample;
+			};
+			name = Debug;
+		};
+		D96A2727210C64E600D36B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 485UWJKTW6;
+				INFOPLIST_FILE = TyphoonExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.valerio.TyphoonExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TyphoonExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D96A26F2210C64E500D36B70 /* Build configuration list for PBXProject "TyphoonExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D96A271D210C64E600D36B70 /* Debug */,
+				D96A271E210C64E600D36B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D96A271F210C64E600D36B70 /* Build configuration list for PBXNativeTarget "TyphoonExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D96A2720210C64E600D36B70 /* Debug */,
+				D96A2721210C64E600D36B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D96A2722210C64E600D36B70 /* Build configuration list for PBXNativeTarget "TyphoonExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D96A2723210C64E600D36B70 /* Debug */,
+				D96A2724210C64E600D36B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D96A2725210C64E600D36B70 /* Build configuration list for PBXNativeTarget "TyphoonExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D96A2726210C64E600D36B70 /* Debug */,
+				D96A2727210C64E600D36B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D96A26EF210C64E500D36B70 /* Project object */;
+}

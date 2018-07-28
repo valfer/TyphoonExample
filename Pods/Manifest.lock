@@ -1,0 +1,18 @@
+PODS:
+  - Typhoon (3.3.3):
+    - Typhoon/no-arc (= 3.3.3)
+  - Typhoon/no-arc (3.3.3)
+
+DEPENDENCIES:
+  - Typhoon (= 3.3.3)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Typhoon
+
+SPEC CHECKSUMS:
+  Typhoon: df3d23f59dccc8eda3e6535e58afd160ae60567e
+
+PODFILE CHECKSUM: 640f7a41a89c0371625ed635d251a3d93e611bc5
+
+COCOAPODS: 1.5.3
