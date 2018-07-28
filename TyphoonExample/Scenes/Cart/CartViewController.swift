@@ -14,30 +14,76 @@ import UIKit
 
 protocol CartDisplayLogic: class
 {
-    func displayCart(viewModel: Cart.Something.ViewModel)
+  func displayCart(viewModel: Cart.Cart.ViewModel)
 }
 
 class CartViewController: UIViewController, CartDisplayLogic
 {
-    @IBOutlet weak var cartName: UILabel!
-    var interactor: CartBusinessLogic?
+  var interactor: CartBusinessLogic?
+  var router: (NSObjectProtocol & CartRoutingLogic & CartDataPassing)?
+
+  // MARK: Object lifecycle
   
-    // MARK: View lifecycle
+  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
+  {
+    super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    setup()
+  }
   
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-        interactor.configureForCurrentCart()
-    }
+  required init?(coder aDecoder: NSCoder)
+  {
+    super.init(coder: aDecoder)
+    setup()
+  }
   
-    // MARK: Actions
-    
-    @IBAction func releaseCart(_ sender: Any) {
+  // MARK: Setup
+  
+  private func setup()
+  {
+    let viewController = self
+    let interactor = CartInteractor()
+    let presenter = CartPresenter()
+    let router = CartRouter()
+    viewController.interactor = interactor
+    viewController.router = router
+    interactor.presenter = presenter
+    presenter.viewController = viewController
+    router.viewController = viewController
+    router.dataStore = interactor
+  }
+  
+  // MARK: Routing
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+  {
+    if let scene = segue.identifier {
+      let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
+      if let router = router, router.responds(to: selector) {
+        router.perform(selector, with: segue)
+      }
     }
-    
-    // MARK: CartDisplayLogic
-    
-    func displayCart(viewModel: Cart.Something.ViewModel) {
-        cartName.text = viewModel.name
-    }
+  }
+  
+  // MARK: View lifecycle
+  
+  override func viewDidLoad()
+  {
+    super.viewDidLoad()
+    doCart()
+  }
+  
+  // MARK: Do Cart
+  
+  //@IBOutlet weak var nameTextField: UITextField!
+  
+  func doCart()
+  {
+    let request = Cart.Cart.Request()
+    interactor?.doCart(request: request)
+  }
+  
+  func displayCart(viewModel: Cart.Cart.ViewModel)
+  {
+    //nameTextField.text = viewModel.name
+  }
 }

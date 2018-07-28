@@ -10,11 +10,11 @@
 //  see http://clean-swift.com
 //
 
-import UIKit
+//import UIKit
 
 protocol CartBusinessLogic
 {
-  func doSomething(request: Cart.Something.Request)
+  func configureForCurrentCart(cart: Cart.ConfigureForCurrentCart.Request)
 }
 
 protocol CartDataStore
@@ -32,7 +32,7 @@ class CartInteractor: CartBusinessLogic, CartDataStore
   
   func doSomething(request: Cart.Something.Request)
   {
-    worker = CartWorker()ù
+    worker = CartWorker()
     worker?.doSomeWork()
     
     let response = Cart.Something.Response()

@@ -17,14 +17,14 @@
 		D96A272B210C659100D36B70 /* CartManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A272A210C659100D36B70 /* CartManagerProtocol.swift */; };
 		D96A272D210C65A000D36B70 /* CartManagerSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A272C210C65A000D36B70 /* CartManagerSingleton.swift */; };
 		D96A272F210C65CA00D36B70 /* CartManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A272E210C65CA00D36B70 /* CartManagerMock.swift */; };
+		D9835F7A210C991E00B3ECB5 /* CartPositionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9835F74210C991E00B3ECB5 /* CartPositionsPresenter.swift */; };
+		D9835F7B210C991E00B3ECB5 /* CartPositionsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9835F75210C991E00B3ECB5 /* CartPositionsWorker.swift */; };
+		D9835F7C210C991E00B3ECB5 /* CartPositionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9835F76210C991E00B3ECB5 /* CartPositionsRouter.swift */; };
+		D9835F7D210C991E00B3ECB5 /* CartPositionsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9835F77210C991E00B3ECB5 /* CartPositionsModels.swift */; };
+		D9835F7E210C991E00B3ECB5 /* CartPositionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9835F78210C991E00B3ECB5 /* CartPositionsViewController.swift */; };
+		D9835F7F210C991E00B3ECB5 /* CartPositionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9835F79210C991E00B3ECB5 /* CartPositionsInteractor.swift */; };
+		D9835F81210C992E00B3ECB5 /* CartPositions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9835F80210C992E00B3ECB5 /* CartPositions.storyboard */; };
 		D9839843210C94E00015FCC6 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9839842210C94E00015FCC6 /* Cart.swift */; };
-		D983985B210C95A10015FCC6 /* CartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9839855210C95A10015FCC6 /* CartInteractor.swift */; };
-		D983985C210C95A10015FCC6 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9839856210C95A10015FCC6 /* CartViewController.swift */; };
-		D983985D210C95A10015FCC6 /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9839857210C95A10015FCC6 /* CartPresenter.swift */; };
-		D983985E210C95A10015FCC6 /* CartWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9839858210C95A10015FCC6 /* CartWorker.swift */; };
-		D983985F210C95A10015FCC6 /* CartModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9839859210C95A10015FCC6 /* CartModels.swift */; };
-		D9839860210C95A10015FCC6 /* CartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983985A210C95A10015FCC6 /* CartRouter.swift */; };
-		D9839863210C95AC0015FCC6 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9839861210C95AC0015FCC6 /* Cart.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,14 +63,14 @@
 		D96A272A210C659100D36B70 /* CartManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManagerProtocol.swift; sourceTree = "<group>"; };
 		D96A272C210C65A000D36B70 /* CartManagerSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManagerSingleton.swift; sourceTree = "<group>"; };
 		D96A272E210C65CA00D36B70 /* CartManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManagerMock.swift; sourceTree = "<group>"; };
+		D9835F74210C991E00B3ECB5 /* CartPositionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPositionsPresenter.swift; sourceTree = "<group>"; };
+		D9835F75210C991E00B3ECB5 /* CartPositionsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPositionsWorker.swift; sourceTree = "<group>"; };
+		D9835F76210C991E00B3ECB5 /* CartPositionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPositionsRouter.swift; sourceTree = "<group>"; };
+		D9835F77210C991E00B3ECB5 /* CartPositionsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPositionsModels.swift; sourceTree = "<group>"; };
+		D9835F78210C991E00B3ECB5 /* CartPositionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPositionsViewController.swift; sourceTree = "<group>"; };
+		D9835F79210C991E00B3ECB5 /* CartPositionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPositionsInteractor.swift; sourceTree = "<group>"; };
+		D9835F80210C992E00B3ECB5 /* CartPositions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CartPositions.storyboard; sourceTree = "<group>"; };
 		D9839842210C94E00015FCC6 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
-		D9839855210C95A10015FCC6 /* CartInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CartInteractor.swift; path = TyphoonExample/Scenes/Cart/CartInteractor.swift; sourceTree = SOURCE_ROOT; };
-		D9839856210C95A10015FCC6 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CartViewController.swift; path = TyphoonExample/Scenes/Cart/CartViewController.swift; sourceTree = SOURCE_ROOT; };
-		D9839857210C95A10015FCC6 /* CartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CartPresenter.swift; path = TyphoonExample/Scenes/Cart/CartPresenter.swift; sourceTree = SOURCE_ROOT; };
-		D9839858210C95A10015FCC6 /* CartWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CartWorker.swift; path = TyphoonExample/Scenes/Cart/CartWorker.swift; sourceTree = SOURCE_ROOT; };
-		D9839859210C95A10015FCC6 /* CartModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CartModels.swift; path = TyphoonExample/Scenes/Cart/CartModels.swift; sourceTree = SOURCE_ROOT; };
-		D983985A210C95A10015FCC6 /* CartRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CartRouter.swift; path = TyphoonExample/Scenes/Cart/CartRouter.swift; sourceTree = SOURCE_ROOT; };
-		D9839862210C95AC0015FCC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TyphoonExample/Scenes/Cart/Base.lproj/Cart.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 		D92A75C0210C882F005AB80E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				D9839844210C957C0015FCC6 /* Cart */,
+				D9835F73210C990900B3ECB5 /* CartPositions */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -170,19 +170,18 @@
 			path = TyphoonExampleUITests;
 			sourceTree = "<group>";
 		};
-		D9839844210C957C0015FCC6 /* Cart */ = {
+		D9835F73210C990900B3ECB5 /* CartPositions */ = {
 			isa = PBXGroup;
 			children = (
-				D9839861210C95AC0015FCC6 /* Cart.storyboard */,
-				D9839855210C95A10015FCC6 /* CartInteractor.swift */,
-				D9839859210C95A10015FCC6 /* CartModels.swift */,
-				D9839857210C95A10015FCC6 /* CartPresenter.swift */,
-				D983985A210C95A10015FCC6 /* CartRouter.swift */,
-				D9839856210C95A10015FCC6 /* CartViewController.swift */,
-				D9839858210C95A10015FCC6 /* CartWorker.swift */,
+				D9835F74210C991E00B3ECB5 /* CartPositionsPresenter.swift */,
+				D9835F75210C991E00B3ECB5 /* CartPositionsWorker.swift */,
+				D9835F76210C991E00B3ECB5 /* CartPositionsRouter.swift */,
+				D9835F77210C991E00B3ECB5 /* CartPositionsModels.swift */,
+				D9835F78210C991E00B3ECB5 /* CartPositionsViewController.swift */,
+				D9835F79210C991E00B3ECB5 /* CartPositionsInteractor.swift */,
+				D9835F80210C992E00B3ECB5 /* CartPositions.storyboard */,
 			);
-			name = Cart;
-			path = "New Group";
+			path = CartPositions;
 			sourceTree = "<group>";
 		};
 		D9839864210C960F0015FCC6 /* Model */ = {
@@ -317,8 +316,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9839863210C95AC0015FCC6 /* Cart.storyboard in Resources */,
 				D96A2705210C64E600D36B70 /* LaunchScreen.storyboard in Resources */,
+				D9835F81210C992E00B3ECB5 /* CartPositions.storyboard in Resources */,
 				D96A2702210C64E600D36B70 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,18 +364,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9835F7E210C991E00B3ECB5 /* CartPositionsViewController.swift in Sources */,
 				D9839843210C94E00015FCC6 /* Cart.swift in Sources */,
-				D9839860210C95A10015FCC6 /* CartRouter.swift in Sources */,
-				D983985C210C95A10015FCC6 /* CartViewController.swift in Sources */,
 				D96A26FD210C64E500D36B70 /* ViewController.swift in Sources */,
-				D983985F210C95A10015FCC6 /* CartModels.swift in Sources */,
+				D9835F7C210C991E00B3ECB5 /* CartPositionsRouter.swift in Sources */,
 				D96A272D210C65A000D36B70 /* CartManagerSingleton.swift in Sources */,
+				D9835F7A210C991E00B3ECB5 /* CartPositionsPresenter.swift in Sources */,
+				D9835F7B210C991E00B3ECB5 /* CartPositionsWorker.swift in Sources */,
 				D96A26FB210C64E500D36B70 /* AppDelegate.swift in Sources */,
-				D983985D210C95A10015FCC6 /* CartPresenter.swift in Sources */,
-				D983985B210C95A10015FCC6 /* CartInteractor.swift in Sources */,
 				D96A272F210C65CA00D36B70 /* CartManagerMock.swift in Sources */,
+				D9835F7D210C991E00B3ECB5 /* CartPositionsModels.swift in Sources */,
 				D96A272B210C659100D36B70 /* CartManagerProtocol.swift in Sources */,
-				D983985E210C95A10015FCC6 /* CartWorker.swift in Sources */,
+				D9835F7F210C991E00B3ECB5 /* CartPositionsInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,14 +417,6 @@
 				D96A2704210C64E600D36B70 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		D9839861210C95AC0015FCC6 /* Cart.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D9839862210C95AC0015FCC6 /* Base */,
-			);
-			name = Cart.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -1,5 +1,5 @@
 //
-//  CartModels.swift
+//  CartPositionsModels.swift
 //  TyphoonExample
 //
 //  Created by Valerio Ferrucci on 28/07/18.
@@ -12,11 +12,11 @@
 
 import UIKit
 
-enum Cart
+enum CartPositions
 {
   // MARK: Use cases
   
-  enum Something
+  enum Positions
   {
     struct Request
     {

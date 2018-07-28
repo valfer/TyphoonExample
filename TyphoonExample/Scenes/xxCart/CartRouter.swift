@@ -27,6 +27,23 @@ class CartRouter: NSObject, CartRoutingLogic, CartDataPassing
   weak var viewController: CartViewController?
   var dataStore: CartDataStore?
   
+    static func assembleCart(id : String) -> UIViewController {
+        
+        let viewController = UIStoryboard(name: "Cart", bundle: nil).instantiateViewController(withIdentifier: "Cart") as! CartViewController
+        
+        let presenter = CartPresenter()
+        let interactor = CartInteractor()
+        let router = CartRouter()
+        
+        // VIP
+        viewController.interactor = interactor
+        interactor.presenter = presenter
+        presenter.viewController = viewController
+        router.viewController = viewController
+        
+        return viewController
+    }
+    
   // MARK: Routing
   
   //func routeToSomewhere(segue: UIStoryboardSegue?)

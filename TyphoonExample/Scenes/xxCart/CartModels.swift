@@ -10,13 +10,13 @@
 //  see http://clean-swift.com
 //
 
-import UIKit
+//import UIKit
 
-enum Cart
+enum CartModels
 {
   // MARK: Use cases
   
-  enum Something
+  enum CurrentCart
   {
     struct Request
     {
@@ -26,6 +26,7 @@ enum Cart
     }
     struct ViewModel
     {
+        var name : String
     }
   }
 }

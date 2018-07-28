@@ -10,11 +10,11 @@
 //  see http://clean-swift.com
 //
 
-import UIKit
+//import UIKit
 
 protocol CartPresentationLogic
 {
-  func presentSomething(response: Cart.Something.Response)
+  func presentSomething(response: Cart.CurrentCart.Response)
 }
 
 class CartPresenter: CartPresentationLogic
@@ -23,9 +23,9 @@ class CartPresenter: CartPresentationLogic
   
   // MARK: Do something
   
-  func presentSomething(response: Cart.Something.Response)
+  func presentCurrentCart(response: CartModels.CurrentCart.Response)
   {
-    let viewModel = Cart.Something.ViewModel()
-    viewController?.displaySomething(viewModel: viewModel)
+    let viewModel = CartModels.CurrentCart.ViewModel()
+    viewController?.displayCurrentCart(viewModel: viewModel)
   }
 }

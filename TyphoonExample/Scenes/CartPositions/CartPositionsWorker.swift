@@ -1,5 +1,5 @@
 //
-//  CartModels.swift
+//  CartPositionsWorker.swift
 //  TyphoonExample
 //
 //  Created by Valerio Ferrucci on 28/07/18.
@@ -12,20 +12,9 @@
 
 import UIKit
 
-enum Cart
+class CartPositionsWorker
 {
-  // MARK: Use cases
-  
-  enum Something
+  func doSomeWork()
   {
-    struct Request
-    {
-    }
-    struct Response
-    {
-    }
-    struct ViewModel
-    {
-    }
   }
 }

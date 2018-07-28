@@ -1,5 +1,5 @@
 //
-//  CartPresenter.swift
+//  CartPositionsPresenter.swift
 //  TyphoonExample
 //
 //  Created by Valerio Ferrucci on 28/07/18.
@@ -12,20 +12,20 @@
 
 import UIKit
 
-protocol CartPresentationLogic
+protocol CartPositionsPresentationLogic
 {
-  func presentSomething(response: Cart.Something.Response)
+  func presentSomething(response: CartPositions.Something.Response)
 }
 
-class CartPresenter: CartPresentationLogic
+class CartPositionsPresenter: CartPositionsPresentationLogic
 {
-  weak var viewController: CartDisplayLogic?
+  weak var viewController: CartPositionsDisplayLogic?
   
   // MARK: Do something
   
-  func presentSomething(response: Cart.Something.Response)
+  func presentSomething(response: CartPositions.Something.Response)
   {
-    let viewModel = Cart.Something.ViewModel()
+    let viewModel = CartPositions.Something.ViewModel()
     viewController?.displaySomething(viewModel: viewModel)
   }
 }

@@ -1,5 +1,5 @@
 //
-//  CartRouter.swift
+//  CartPositionsRouter.swift
 //  TyphoonExample
 //
 //  Created by Valerio Ferrucci on 28/07/18.
@@ -12,20 +12,20 @@
 
 import UIKit
 
-@objc protocol CartRoutingLogic
+@objc protocol CartPositionsRoutingLogic
 {
   //func routeToSomewhere(segue: UIStoryboardSegue?)
 }
 
-protocol CartDataPassing
+protocol CartPositionsDataPassing
 {
-  var dataStore: CartDataStore? { get }
+  var dataStore: CartPositionsDataStore? { get }
 }
 
-class CartRouter: NSObject, CartRoutingLogic, CartDataPassing
+class CartPositionsRouter: NSObject, CartPositionsRoutingLogic, CartPositionsDataPassing
 {
-  weak var viewController: CartViewController?
-  var dataStore: CartDataStore?
+  weak var viewController: CartPositionsViewController?
+  var dataStore: CartPositionsDataStore?
   
   // MARK: Routing
   
@@ -46,14 +46,14 @@ class CartRouter: NSObject, CartRoutingLogic, CartDataPassing
 
   // MARK: Navigation
   
-  //func navigateToSomewhere(source: CartViewController, destination: SomewhereViewController)
+  //func navigateToSomewhere(source: CartPositionsViewController, destination: SomewhereViewController)
   //{
   //  source.show(destination, sender: nil)
   //}
   
   // MARK: Passing data
   
-  //func passDataToSomewhere(source: CartDataStore, destination: inout SomewhereDataStore)
+  //func passDataToSomewhere(source: CartPositionsDataStore, destination: inout SomewhereDataStore)
   //{
   //  destination.name = source.name
   //}
