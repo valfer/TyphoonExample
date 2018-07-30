@@ -14,7 +14,7 @@ import UIKit
 
 protocol CartBusinessLogic
 {
-  func loadCurrenCart(request: CartModels.CurrentCart.Request)
+    func loadCurrenCart(request: CartModels.CurrentCart.Request)
 }
 
 protocol CartDataStore
@@ -27,15 +27,15 @@ class CartInteractor: CartBusinessLogic, CartDataStore
     var presenter: CartPresentationLogic?
     var worker: CartWorker?
     var cart: Cart?
-
-  // MARK: Do something
-  
-  func loadCurrenCart(request: CartModels.CurrentCart.Request)
-  {
-    worker = CartWorker()
-    cart = worker?.loadCurrenCart()
     
-    let response = CartModels.CurrentCart.Response(cart: cart!)
-    presenter?.presentCurrentCart(response: response)
-  }
+    // MARK: Do something
+    
+    func loadCurrenCart(request: CartModels.CurrentCart.Request)
+    {
+        worker = CartWorker()
+        let cart = worker?.loadCurrenCart()
+        
+        let response = CartModels.CurrentCart.Response(cart: cart!)
+        presenter?.presentCurrentCart(response: response)
+    }
 }

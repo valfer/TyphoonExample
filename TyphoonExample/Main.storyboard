@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VM7-8r-6s7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="jN0-j7-lwq">
+            <objects>
+                <viewController id="VM7-8r-6s7" customClass="MainViewController" customModule="TyphoonExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rNf-w7-8If">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0m-ti-0Xe">
+                                <rect key="frame" x="173" y="40" width="30" height="30"/>
+                                <state key="normal" title="Cart"/>
+                                <connections>
+                                    <action selector="showCart:" destination="VM7-8r-6s7" eventType="touchUpInside" id="G3V-2n-vxQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a0m-ti-0Xe" firstAttribute="centerX" secondItem="rNf-w7-8If" secondAttribute="centerX" id="Grs-qu-cY2"/>
+                            <constraint firstItem="a0m-ti-0Xe" firstAttribute="top" secondItem="qFQ-aZ-HmS" secondAttribute="top" constant="20" id="KO7-FD-2TV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qFQ-aZ-HmS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oT6-4j-0rE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="465" y="-221"/>
+        </scene>
+    </scenes>
+</document>

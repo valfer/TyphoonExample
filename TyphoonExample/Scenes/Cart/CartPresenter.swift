@@ -14,7 +14,7 @@ import UIKit
 
 protocol CartPresentationLogic
 {
-  func presentCurrentCart(response: CartModels.CurrentCart.Response)
+    func presentCurrentCart(response: CartModels.CurrentCart.Response)
 }
 
 class CartPresenter: CartPresentationLogic
@@ -26,7 +26,7 @@ class CartPresenter: CartPresentationLogic
         dateFormatter.timeStyle = .none
         return dateFormatter
     }()
-
+    
     func presentCurrentCart(response: CartModels.CurrentCart.Response)
     {
         let cart = response.cart

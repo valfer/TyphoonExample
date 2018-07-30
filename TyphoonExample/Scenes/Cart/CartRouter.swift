@@ -14,47 +14,34 @@ import UIKit
 
 @objc protocol CartRoutingLogic
 {
-  //func routeToSomewhere(segue: UIStoryboardSegue?)
+    //func routeToSomewhere(segue: UIStoryboardSegue?)
 }
 
 protocol CartDataPassing
 {
-  var dataStore: CartDataStore? { get }
+    var dataStore: CartDataStore? { get }
 }
 
 class CartRouter: NSObject, CartRoutingLogic, CartDataPassing
 {
-  weak var viewController: CartViewController?
-  var dataStore: CartDataStore?
-  
-  // MARK: Routing
-  
-  //func routeToSomewhere(segue: UIStoryboardSegue?)
-  //{
-  //  if let segue = segue {
-  //    let destinationVC = segue.destination as! SomewhereViewController
-  //    var destinationDS = destinationVC.router!.dataStore!
-  //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-  //  } else {
-  //    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-  //    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SomewhereViewController") as! SomewhereViewController
-  //    var destinationDS = destinationVC.router!.dataStore!
-  //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-  //    navigateToSomewhere(source: viewController!, destination: destinationVC)
-  //  }
-  //}
-
-  // MARK: Navigation
-  
-  //func navigateToSomewhere(source: CartViewController, destination: SomewhereViewController)
-  //{
-  //  source.show(destination, sender: nil)
-  //}
-  
-  // MARK: Passing data
-  
-  //func passDataToSomewhere(source: CartDataStore, destination: inout SomewhereDataStore)
-  //{
-  //  destination.name = source.name
-  //}
+    weak var viewController: CartViewController?
+    var dataStore: CartDataStore?
+    
+    static func assembleCart() -> UIViewController {
+        let viewController = UIStoryboard(name: "Cart", bundle: nil).instantiateViewController(withIdentifier: "CartViewController") as! CartViewController
+        
+        let presenter = CartPresenter()
+        let interactor = CartInteractor()
+        let router = CartRouter()
+        
+        viewController.interactor = interactor
+        viewController.router = router
+        interactor.presenter = presenter
+        presenter.viewController = viewController
+        router.viewController = viewController
+        router.dataStore = interactor
+        
+        return viewController
+    }
+    
 }

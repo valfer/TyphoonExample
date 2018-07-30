@@ -14,81 +14,40 @@ import UIKit
 
 protocol CartDisplayLogic: class
 {
-  func displayCart(viewModel: CartModels.CurrentCart.ViewModel)
+    func displayCart(viewModel: CartModels.CurrentCart.ViewModel)
 }
 
 class CartViewController: UIViewController, CartDisplayLogic
 {
-  var interactor: CartBusinessLogic?
-  var router: (NSObjectProtocol & CartRoutingLogic & CartDataPassing)?
-
+    var interactor: CartBusinessLogic?
+    var router: (NSObjectProtocol & CartRoutingLogic & CartDataPassing)?
+    
     @IBOutlet weak var cartIdLbl: UILabel!
     @IBOutlet weak var cartDateLbl: UILabel!
     
     var displayedCart: CartModels.CurrentCart.ViewModel.DisplayedCart?
     
-    // MARK: Object lifecycle
-  
-  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
-  {
-    super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    setup()
-  }
-  
-  required init?(coder aDecoder: NSCoder)
-  {
-    super.init(coder: aDecoder)
-    setup()
-  }
-  
-  // MARK: Setup
-  
-  private func setup()
-  {
-    let viewController = self
-    let interactor = CartInteractor()
-    let presenter = CartPresenter()
-    let router = CartRouter()
-    viewController.interactor = interactor
-    viewController.router = router
-    interactor.presenter = presenter
-    presenter.viewController = viewController
-    router.viewController = viewController
-    router.dataStore = interactor
-  }
-  
-  // MARK: Routing
-  
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-  {
-    if let scene = segue.identifier {
-      let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
-      if let router = router, router.responds(to: selector) {
-        router.perform(selector, with: segue)
-      }
+    
+    // MARK: View lifecycle
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        loadCurrenCart()
     }
-  }
-  
-  // MARK: View lifecycle
-  
-  override func viewDidLoad()
-  {
-    super.viewDidLoad()
-    loadCurrenCart()
-  }
-  
-  // MARK: loadCurrenCart
-  
-  func loadCurrenCart()
-  {
-    let request = CartModels.CurrentCart.Request()
-    interactor?.loadCurrenCart(request: request)
-  }
-  
-  func displayCart(viewModel: CartModels.CurrentCart.ViewModel)
-  {
-    displayedCart = viewModel.displayedCart
-    cartIdLbl.text = displayedCart?.id
-    cartDateLbl.text = displayedCart?.created
-  }
+    
+    // MARK: loadCurrenCart
+    
+    func loadCurrenCart()
+    {
+        let request = CartModels.CurrentCart.Request()
+        interactor?.loadCurrenCart(request: request)
+    }
+    
+    func displayCart(viewModel: CartModels.CurrentCart.ViewModel)
+    {
+        displayedCart = viewModel.displayedCart
+        cartIdLbl.text = displayedCart?.id
+        cartDateLbl.text = displayedCart?.created
+    }
 }

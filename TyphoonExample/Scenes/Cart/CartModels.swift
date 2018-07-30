@@ -14,25 +14,25 @@ import UIKit
 
 enum CartModels
 {
-  // MARK: Use cases
-  
-  enum CurrentCart
-  {
-    struct Request
+    // MARK: Use cases
+    
+    enum CurrentCart
     {
-    }
-    struct Response
-    {
-        var cart : Cart
-    }
-    struct ViewModel
-    {
-        struct DisplayedCart
+        struct Request
         {
-            var id : String
-            var created : String
         }
-        var displayedCart: DisplayedCart
+        struct Response
+        {
+            var cart : Cart
+        }
+        struct ViewModel
+        {
+            struct DisplayedCart
+            {
+                var id : String
+                var created : String
+            }
+            var displayedCart: DisplayedCart
+        }
     }
-  }
 }
