@@ -17,14 +17,14 @@
 		D96A272B210C659100D36B70 /* CartManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A272A210C659100D36B70 /* CartManagerProtocol.swift */; };
 		D96A272D210C65A000D36B70 /* CartManagerSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A272C210C65A000D36B70 /* CartManagerSingleton.swift */; };
 		D96A272F210C65CA00D36B70 /* CartManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A272E210C65CA00D36B70 /* CartManagerMock.swift */; };
-		D9835F7A210C991E00B3ECB5 /* CartPositionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9835F74210C991E00B3ECB5 /* CartPositionsPresenter.swift */; };
-		D9835F7B210C991E00B3ECB5 /* CartPositionsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9835F75210C991E00B3ECB5 /* CartPositionsWorker.swift */; };
-		D9835F7C210C991E00B3ECB5 /* CartPositionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9835F76210C991E00B3ECB5 /* CartPositionsRouter.swift */; };
-		D9835F7D210C991E00B3ECB5 /* CartPositionsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9835F77210C991E00B3ECB5 /* CartPositionsModels.swift */; };
-		D9835F7E210C991E00B3ECB5 /* CartPositionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9835F78210C991E00B3ECB5 /* CartPositionsViewController.swift */; };
-		D9835F7F210C991E00B3ECB5 /* CartPositionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9835F79210C991E00B3ECB5 /* CartPositionsInteractor.swift */; };
-		D9835F81210C992E00B3ECB5 /* CartPositions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9835F80210C992E00B3ECB5 /* CartPositions.storyboard */; };
 		D9839843210C94E00015FCC6 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9839842210C94E00015FCC6 /* Cart.swift */; };
+		D9B2D0FA210F99090059CEA0 /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2D0F4210F99090059CEA0 /* CartPresenter.swift */; };
+		D9B2D0FB210F99090059CEA0 /* CartWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2D0F5210F99090059CEA0 /* CartWorker.swift */; };
+		D9B2D0FC210F99090059CEA0 /* CartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2D0F6210F99090059CEA0 /* CartRouter.swift */; };
+		D9B2D0FD210F99090059CEA0 /* CartModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2D0F7210F99090059CEA0 /* CartModels.swift */; };
+		D9B2D0FE210F99090059CEA0 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2D0F8210F99090059CEA0 /* CartViewController.swift */; };
+		D9B2D0FF210F99090059CEA0 /* CartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2D0F9210F99090059CEA0 /* CartInteractor.swift */; };
+		D9B2D101210F99180059CEA0 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B2D100210F99180059CEA0 /* Cart.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,14 +63,14 @@
 		D96A272A210C659100D36B70 /* CartManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManagerProtocol.swift; sourceTree = "<group>"; };
 		D96A272C210C65A000D36B70 /* CartManagerSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManagerSingleton.swift; sourceTree = "<group>"; };
 		D96A272E210C65CA00D36B70 /* CartManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManagerMock.swift; sourceTree = "<group>"; };
-		D9835F74210C991E00B3ECB5 /* CartPositionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPositionsPresenter.swift; sourceTree = "<group>"; };
-		D9835F75210C991E00B3ECB5 /* CartPositionsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPositionsWorker.swift; sourceTree = "<group>"; };
-		D9835F76210C991E00B3ECB5 /* CartPositionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPositionsRouter.swift; sourceTree = "<group>"; };
-		D9835F77210C991E00B3ECB5 /* CartPositionsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPositionsModels.swift; sourceTree = "<group>"; };
-		D9835F78210C991E00B3ECB5 /* CartPositionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPositionsViewController.swift; sourceTree = "<group>"; };
-		D9835F79210C991E00B3ECB5 /* CartPositionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPositionsInteractor.swift; sourceTree = "<group>"; };
-		D9835F80210C992E00B3ECB5 /* CartPositions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CartPositions.storyboard; sourceTree = "<group>"; };
 		D9839842210C94E00015FCC6 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		D9B2D0F4210F99090059CEA0 /* CartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CartPresenter.swift; path = TyphoonExample/Scenes/Cart/CartPresenter.swift; sourceTree = SOURCE_ROOT; };
+		D9B2D0F5210F99090059CEA0 /* CartWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CartWorker.swift; path = TyphoonExample/Scenes/Cart/CartWorker.swift; sourceTree = SOURCE_ROOT; };
+		D9B2D0F6210F99090059CEA0 /* CartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CartRouter.swift; path = TyphoonExample/Scenes/Cart/CartRouter.swift; sourceTree = SOURCE_ROOT; };
+		D9B2D0F7210F99090059CEA0 /* CartModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CartModels.swift; path = TyphoonExample/Scenes/Cart/CartModels.swift; sourceTree = SOURCE_ROOT; };
+		D9B2D0F8210F99090059CEA0 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CartViewController.swift; path = TyphoonExample/Scenes/Cart/CartViewController.swift; sourceTree = SOURCE_ROOT; };
+		D9B2D0F9210F99090059CEA0 /* CartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CartInteractor.swift; path = TyphoonExample/Scenes/Cart/CartInteractor.swift; sourceTree = SOURCE_ROOT; };
+		D9B2D100210F99180059CEA0 /* Cart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Cart.storyboard; path = TyphoonExample/Scenes/Cart/Cart.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 		D92A75C0210C882F005AB80E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				D9835F73210C990900B3ECB5 /* CartPositions */,
+				D9B2D0F3210F98D40059CEA0 /* Cart */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -170,26 +170,27 @@
 			path = TyphoonExampleUITests;
 			sourceTree = "<group>";
 		};
-		D9835F73210C990900B3ECB5 /* CartPositions */ = {
-			isa = PBXGroup;
-			children = (
-				D9835F74210C991E00B3ECB5 /* CartPositionsPresenter.swift */,
-				D9835F75210C991E00B3ECB5 /* CartPositionsWorker.swift */,
-				D9835F76210C991E00B3ECB5 /* CartPositionsRouter.swift */,
-				D9835F77210C991E00B3ECB5 /* CartPositionsModels.swift */,
-				D9835F78210C991E00B3ECB5 /* CartPositionsViewController.swift */,
-				D9835F79210C991E00B3ECB5 /* CartPositionsInteractor.swift */,
-				D9835F80210C992E00B3ECB5 /* CartPositions.storyboard */,
-			);
-			path = CartPositions;
-			sourceTree = "<group>";
-		};
 		D9839864210C960F0015FCC6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				D9839842210C94E00015FCC6 /* Cart.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D9B2D0F3210F98D40059CEA0 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				D9B2D0F4210F99090059CEA0 /* CartPresenter.swift */,
+				D9B2D0F5210F99090059CEA0 /* CartWorker.swift */,
+				D9B2D0F6210F99090059CEA0 /* CartRouter.swift */,
+				D9B2D0F7210F99090059CEA0 /* CartModels.swift */,
+				D9B2D0F8210F99090059CEA0 /* CartViewController.swift */,
+				D9B2D0F9210F99090059CEA0 /* CartInteractor.swift */,
+				D9B2D100210F99180059CEA0 /* Cart.storyboard */,
+			);
+			name = Cart;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		D9DF77C8210C8FF5004442B6 /* CartManager */ = {
@@ -317,7 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D96A2705210C64E600D36B70 /* LaunchScreen.storyboard in Resources */,
-				D9835F81210C992E00B3ECB5 /* CartPositions.storyboard in Resources */,
+				D9B2D101210F99180059CEA0 /* Cart.storyboard in Resources */,
 				D96A2702210C64E600D36B70 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,18 +365,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9835F7E210C991E00B3ECB5 /* CartPositionsViewController.swift in Sources */,
+				D9B2D0FA210F99090059CEA0 /* CartPresenter.swift in Sources */,
 				D9839843210C94E00015FCC6 /* Cart.swift in Sources */,
+				D9B2D0FC210F99090059CEA0 /* CartRouter.swift in Sources */,
 				D96A26FD210C64E500D36B70 /* ViewController.swift in Sources */,
-				D9835F7C210C991E00B3ECB5 /* CartPositionsRouter.swift in Sources */,
 				D96A272D210C65A000D36B70 /* CartManagerSingleton.swift in Sources */,
-				D9835F7A210C991E00B3ECB5 /* CartPositionsPresenter.swift in Sources */,
-				D9835F7B210C991E00B3ECB5 /* CartPositionsWorker.swift in Sources */,
 				D96A26FB210C64E500D36B70 /* AppDelegate.swift in Sources */,
 				D96A272F210C65CA00D36B70 /* CartManagerMock.swift in Sources */,
-				D9835F7D210C991E00B3ECB5 /* CartPositionsModels.swift in Sources */,
+				D9B2D0FE210F99090059CEA0 /* CartViewController.swift in Sources */,
+				D9B2D0FF210F99090059CEA0 /* CartInteractor.swift in Sources */,
+				D9B2D0FD210F99090059CEA0 /* CartModels.swift in Sources */,
 				D96A272B210C659100D36B70 /* CartManagerProtocol.swift in Sources */,
-				D9835F7F210C991E00B3ECB5 /* CartPositionsInteractor.swift in Sources */,
+				D9B2D0FB210F99090059CEA0 /* CartWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

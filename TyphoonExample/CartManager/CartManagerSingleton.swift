@@ -9,5 +9,8 @@
 import UIKit
 
 class CartManagerSingleton: CartManagerProtocol {
-
+    func currentCart() -> Cart
+    {
+        return Cart(id: "1001", created: Date())
+    }
 }

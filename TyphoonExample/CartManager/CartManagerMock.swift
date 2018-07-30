@@ -9,5 +9,10 @@
 import UIKit
 
 class CartManagerMock: CartManagerProtocol {
+    
+    func currentCart() -> Cart
+    {
+        return Cart(id: "0", created: Date())
+    }
 
 }

@@ -9,9 +9,11 @@
 import UIKit
 
 class Cart {
-    var customer : String
-    
-    init(customer : String) {
-        self.customer = customer
+    var id : String
+    var created : Date
+
+    init(id : String, created: Date) {
+        self.id = id
+        self.created = created
     }
 }

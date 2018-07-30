@@ -9,5 +9,5 @@
 import UIKit
 
 protocol CartManagerProtocol {
-
+    func currentCart() -> Cart
 }
