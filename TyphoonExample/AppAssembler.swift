@@ -8,6 +8,13 @@
 
 import Foundation
 
-class AppAssembler: CartManagerAssembler { }
+class AppAssembler {
+    
+    static func getCartManager() -> CartManagerProtocol {
+        
+        return CartManagerSingleton.shared()
+    }
+    
+}
 
 

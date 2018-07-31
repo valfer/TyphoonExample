@@ -15,8 +15,7 @@ class CartWorker
     var cartManager : CartManagerProtocol
     
     init() {
-        let assembler : CartManagerAssembler = AppAssembler()
-        cartManager = assembler.resolve()
+        cartManager = AppAssembler.getCartManager()
     }
     
     func loadCurrenCart() -> Cart

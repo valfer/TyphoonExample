@@ -31,8 +31,7 @@
 		D96A272F210C65CA00D36B70 /* CartManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A272E210C65CA00D36B70 /* CartManagerMock.swift */; };
 		D9839843210C94E00015FCC6 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9839842210C94E00015FCC6 /* Cart.swift */; };
 		D9A9AA59211030BF00848EF8 /* AppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9AA58211030BF00848EF8 /* AppAssembler.swift */; };
-		D9A9AA5D211031EC00848EF8 /* CartManagerAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9AA5C211031EC00848EF8 /* CartManagerAssembler.swift */; };
-		D9A9AA5F2110330C00848EF8 /* TestAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9AA5A2110314800848EF8 /* TestAssembler.swift */; };
+		D9CB0AE5211094CD00DFF8A6 /* VFProcessArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CB0AE4211094CC00DFF8A6 /* VFProcessArguments.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,8 +84,7 @@
 		D96A272E210C65CA00D36B70 /* CartManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManagerMock.swift; sourceTree = "<group>"; };
 		D9839842210C94E00015FCC6 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		D9A9AA58211030BF00848EF8 /* AppAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
-		D9A9AA5A2110314800848EF8 /* TestAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAssembler.swift; sourceTree = "<group>"; };
-		D9A9AA5C211031EC00848EF8 /* CartManagerAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManagerAssembler.swift; sourceTree = "<group>"; };
+		D9CB0AE4211094CC00DFF8A6 /* VFProcessArguments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VFProcessArguments.swift; path = "../../vfkit/vfkit-ios/VFProcessArguments.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,8 +172,7 @@
 				D935C29F210FC03D0053330B /* Main.storyboard */,
 				D935C2A1210FC0B50053330B /* MainViewController.swift */,
 				D9A9AA58211030BF00848EF8 /* AppAssembler.swift */,
-				D9A9AA5A2110314800848EF8 /* TestAssembler.swift */,
-				D9A9AA5C211031EC00848EF8 /* CartManagerAssembler.swift */,
+				D9CB0AE4211094CC00DFF8A6 /* VFProcessArguments.swift */,
 				D9839864210C960F0015FCC6 /* Model */,
 				D92A75C0210C882F005AB80E /* Scenes */,
 				D9DF77C8210C8FF5004442B6 /* CartManager */,
@@ -396,12 +393,11 @@
 				D935C292210FBB0A0053330B /* CartModels.swift in Sources */,
 				D935C291210FBB0A0053330B /* CartInteractor.swift in Sources */,
 				D935C28E210FBB0A0053330B /* CartRouter.swift in Sources */,
+				D9CB0AE5211094CD00DFF8A6 /* VFProcessArguments.swift in Sources */,
 				D9A9AA59211030BF00848EF8 /* AppAssembler.swift in Sources */,
-				D9A9AA5D211031EC00848EF8 /* CartManagerAssembler.swift in Sources */,
 				D96A272D210C65A000D36B70 /* CartManagerSingleton.swift in Sources */,
 				D96A26FB210C64E500D36B70 /* AppDelegate.swift in Sources */,
 				D935C28C210FBB0A0053330B /* CartViewController.swift in Sources */,
-				D9A9AA5F2110330C00848EF8 /* TestAssembler.swift in Sources */,
 				D96A272F210C65CA00D36B70 /* CartManagerMock.swift in Sources */,
 				D96A272B210C659100D36B70 /* CartManagerProtocol.swift in Sources */,
 				D935C28F210FBB0A0053330B /* CartWorker.swift in Sources */,
