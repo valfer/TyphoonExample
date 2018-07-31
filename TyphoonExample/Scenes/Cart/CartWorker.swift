@@ -10,14 +10,13 @@
 //  see http://clean-swift.com
 //
 
-import UIKit
-
 class CartWorker
 {
     var cartManager : CartManagerProtocol
     
     init() {
-        cartManager = CartManagerSingleton()
+        let assembler : CartManagerAssembler = AppAssembler()
+        cartManager = assembler.resolve()
     }
     
     func loadCurrenCart() -> Cart

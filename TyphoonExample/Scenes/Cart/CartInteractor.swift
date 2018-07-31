@@ -10,8 +10,6 @@
 //  see http://clean-swift.com
 //
 
-import UIKit
-
 protocol CartBusinessLogic
 {
     func loadCurrenCart(request: CartModels.CurrentCart.Request)
