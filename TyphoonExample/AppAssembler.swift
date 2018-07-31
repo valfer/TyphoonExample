@@ -9,10 +9,24 @@
 import Foundation
 
 class AppAssembler {
+
+    var testing = false
     
-    static func getCartManager() -> CartManagerProtocol {
-        
-        return CartManagerSingleton.shared()
+    static let shared = AppAssembler()
+
+    init() {
+        let processArguments = VFProcessArguments()
+        testing = processArguments.UseMockClassesForTests()
+    }
+
+    // MARK: - DI
+
+    func getCartManager() -> CartManagerProtocol {
+        if testing {
+            return CartManagerMock.shared
+        } else {
+            return CartManagerSingleton.shared
+        }
     }
     
 }

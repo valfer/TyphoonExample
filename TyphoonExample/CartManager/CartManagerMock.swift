@@ -11,19 +11,7 @@ import UIKit
 class CartManagerMock: CartManagerProtocol {
     
     // MARK: - Properties
-    
-    private static var sharedNetworkManager: CartManagerMock = {
-        let networkManager = CartManagerMock()
-        return CartManagerMock()
-    }()
-    
-    // Initialization
-    
-    // MARK: - Accessors
-    
-    class func shared() -> CartManagerMock {
-        return sharedNetworkManager
-    }
+    static let shared = CartManagerMock()
     
     func currentCart() -> Cart
     {

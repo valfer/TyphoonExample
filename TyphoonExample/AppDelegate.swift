@@ -12,18 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var processArguments : VFProcessArguments
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let processArguments = VFProcessArguments()
-        if processArguments.UseMockClassesForTests() {
-            
-        } else {
-            
-        }
-
         return true
     }
 
