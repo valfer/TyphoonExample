@@ -28,6 +28,7 @@ class CartRouter: NSObject, CartRoutingLogic, CartDataPassing
     var dataStore: CartDataStore?
     
     static func assembleCart() -> UIViewController {
+        
         let viewController = UIStoryboard(name: "Cart", bundle: nil).instantiateViewController(withIdentifier: "CartViewController") as! CartViewController
         
         let presenter = CartPresenter()
@@ -35,9 +36,9 @@ class CartRouter: NSObject, CartRoutingLogic, CartDataPassing
         let router = CartRouter()
         
         viewController.interactor = interactor
-        viewController.router = router
         interactor.presenter = presenter
         presenter.viewController = viewController
+
         router.viewController = viewController
         router.dataStore = interactor
         

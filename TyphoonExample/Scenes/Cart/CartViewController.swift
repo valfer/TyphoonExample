@@ -20,7 +20,6 @@ protocol CartDisplayLogic: class
 class CartViewController: UIViewController, CartDisplayLogic
 {
     var interactor: CartBusinessLogic?
-    var router: (NSObjectProtocol & CartRoutingLogic & CartDataPassing)?
     
     @IBOutlet weak var cartIdLbl: UILabel!
     @IBOutlet weak var cartDateLbl: UILabel!
